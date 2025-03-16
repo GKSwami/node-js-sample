@@ -8,7 +8,7 @@ pipeline {
             steps {
                 //cleanWs()
                 // Clone the Git repository
-                git credentialsId: 'git-credentials', url: 'https://github.com/GKSwami/node-js-sample.git', branch: 'main' // Replace with your Git repository
+                git credentialsId: 'node-js-sample.1.0', url: 'https://github.com/GKSwami/node-js-sample.git', branch: 'main' // Replace with your Git repository
                 sh 'echo $?'
                 sh 'echo "successfully cloned"'
             }
